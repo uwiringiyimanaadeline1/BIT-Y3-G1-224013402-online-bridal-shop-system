@@ -1,0 +1,24 @@
+bridal_shop_system/
+├── index.php                 # Front controller, request validation and page routing
+├── schema.sql                # Existing four-table schema (unchanged)
+├── seed.sql                  # Sample dresses and role setup notes
+├── migrations/
+│   └── 20261120_add_staff_role.sql
+├── README.md                 # Setup, credentials, routes and submission notes
+├── TEST_PLAN.md              # 20 manual positive/negative/security cases
+├── TEST_EVIDENCE.md          # Executed syntax/helper checks and runtime limits
+├── DEMO_SCRIPT.md            # 2–3 minute recording walkthrough
+├── config/
+│   └── database.php          # PDO MySQL connection settings
+├── app/
+│   ├── helpers.php           # Escaping, CSRF, validation and role helpers
+│   ├── models/
+│   │   └── ShopRepository.php # Prepared-statement data access for four entities
+│   └── views/
+│       ├── header.php
+│       ├── footer.php
+│       └── dress-cards.php
+└── assets/
+    ├── css/style.css
+    ├── js/app.js
+    └── images/clothes/README.md
